@@ -1,4 +1,4 @@
-NAME       := ukos/svg2pdf
+NAME       := ukos/inkscape
 LATEST     := ${NAME}:latest
 
 default: build
