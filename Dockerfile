@@ -1,4 +1,7 @@
 FROM alpine
 MAINTAINER Matthias J. Kastner matthias@project-moby.net
 
-RUN apk add --no-cache inkscape xvfb
+RUN apk add --no-cache \
+	inkscape \
+	imagemagick \
+	xvfb
