@@ -1,9 +1,10 @@
-FROM alpine
+FROM debian
 MAINTAINER Matthias J. Kastner matthias@project-moby.net
 
-RUN apk add --no-cache \
-	git \
-	libheif-tools \
-	inkscape \
-	imagemagick \
-	xvfb
+RUN apt-get update && \
+	apt-get install --no-install-recommends --assume-yes \
+		git \
+		libheif-examples \
+		inkscape \
+		imagemagick && \
+	apt-get clean
